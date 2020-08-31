@@ -5,11 +5,12 @@ Quick Start
 Excute the commands below:
 
 git clone https://github.com/IAshutoshMishra/GraphQL-Demo.git
-cd GraphQL-Server-Demo
-yarn && yarn start
+cd GraphQL-Demo
+npm i && npm start
 
 Open the url http://localhost:4000/graphql, you will see the GraphiQL GUI in the window, and you can excute the example query and mution operations.
 Query Operation
+
 Request
 
 query {
