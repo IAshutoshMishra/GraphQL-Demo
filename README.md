@@ -15,103 +15,103 @@ Query Operation
 
 Request
 
-query {
+    query {
 
-  user(id: 1) {
-  
-    name
-    
-    nickname
-    
-    message {
-    
-      id
-      
-      content
-      
+      user(id: 1) {
+
+        name
+
+        nickname
+
+        message {
+
+          id
+
+          content
+
+        }
+
+      }
+
     }
-    
-  }
-  
-}
 
 Response
 
-{
-  "data": {
-  
-    "user": [
-    
-      {
-      
-        "name": "gin",
-        
-        "nickname": "lancegin",
-        
-        "message": [
-        
+    {
+      "data": {
+
+        "user": [
+
           {
-          
-            "id": "1",
-            
-            "content": "test message"
-            
-          },
-          
-          {
-          
-            "id": "2",
-            
-            "content": "hello"
-            
-          },
-          
-          {
-          
-            "id": "3",
-            
-            "content": "world"
-            
+
+            "name": "gin",
+
+            "nickname": "lancegin",
+
+            "message": [
+
+              {
+
+                "id": "1",
+
+                "content": "test message"
+
+              },
+
+              {
+
+                "id": "2",
+
+                "content": "hello"
+
+              },
+
+              {
+
+                "id": "3",
+
+                "content": "world"
+
+              }
+
+            ]
+
           }
-          
+
         ]
-        
+
       }
-      
-    ]
-    
-  }
-  
-}
+
+    }
 
 Mutation Operation
 Request
 
-mutation {
+    mutation {
 
-  createMessage(input: {user_id: "1", content: "hello world111"}) {
-  
-    id
-    
-    content
-    
-  }
-  
-}
+      createMessage(input: {user_id: "1", content: "hello world111"}) {
+
+        id
+
+        content
+
+      }
+
+    }
 
 Response
 
-{
-  "data": {
-  
-    "createMessage": {
-    
-      "id": "10",
-      
-      "content": "hello world111"
-      
+    {
+      "data": {
+
+        "createMessage": {
+
+          "id": "10",
+
+          "content": "hello world111"
+
+        }
+
+      }
+
     }
-    
-  }
-  
-}
